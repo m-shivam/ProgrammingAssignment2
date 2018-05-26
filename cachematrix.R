@@ -1,4 +1,5 @@
-##Function creates a special “matrix” and provides function to set values,get ##values,set inverse, get inverse
+##Function creates a special “matrix” and provides function to
+##set values,getvalues,set inverse, get inverse
 makeCacheMatrix <- function(x = matrix()) {
   I <- NULL
   set <- function(y) {
@@ -21,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-## Below  Function will look into cache to see if inverse exist for matrix and ##retrieve the value. if its the same matrix but will calculate if no inverse exist or ##matrix is not same.
+## Below  Function will look into cache to see if inverse exist for matrix and ##retrieve the value. 
+##if its the same matrix but will calculate if no inverse exist or ##matrix is not same.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   m <- x$getInverse()
